@@ -1,14 +1,18 @@
-# Exemplos de Componentes em React
+# Meu Projeto React
 
-Este repositório contém vários exemplos de componentes e funcionalidades em React.
+Este é um exemplo de como usar componentes React com diversos exemplos de funcionalidades e conceitos básicos.
 
-## 1. Função simples retornando um título
+## Função simples retornando um título
 
 ```jsx
 function App() {
   return <h1>Seja bem-vindo ao meu app React 🚀</h1>;
 }
-2. Contador usando useState
+
+```
+## Contador usando useState
+
+```
 jsx
 Copiar
 Editar
@@ -24,18 +28,29 @@ function Counter() {
     </div>
   );
 }
-3. Componente com props
+
+```
+## Componente com props
+```
 jsx
 Copiar
 Editar
 function Welcome({ name }) {
   return <h2>Olá, {name}!</h2>;
 }
-
+```
+## Chamando um componente passando props
+```
+jsx
+Copiar
+Editar
 function App() {
   return <Welcome name="Maria" />;
 }
-4. Listando itens com map
+```
+## Listando itens com map
+
+```
 jsx
 Copiar
 Editar
@@ -50,7 +65,10 @@ function ListaFrutas() {
     </ul>
   );
 }
-5. Botão com função de alerta
+```
+## Botão com função de alerta
+
+```
 jsx
 Copiar
 Editar
@@ -59,7 +77,10 @@ function BotaoAlerta() {
   
   return <button onClick={clicar}>Clique aqui</button>;
 }
-6. useEffect para ação no carregamento
+```
+## useEffect para ação no carregamento
+
+```
 jsx
 Copiar
 Editar
@@ -72,7 +93,10 @@ function Mensagem() {
   
   return <p>Veja o console 🔥</p>;
 }
-7. Função de saudação baseada na hora
+
+```
+## Função de saudação baseada na hora
+```
 jsx
 Copiar
 Editar
@@ -81,14 +105,18 @@ const saudacao = (hora) => {
   if (hora < 18) return 'Boa tarde';
   return 'Boa noite';
 };
-8. Componente usando children
+```
+## Componente usando children
+```
 jsx
 Copiar
 Editar
 function Caixa({ children }) {
   return <div className="caixa">{children}</div>;
 }
-9. Componente de produto com nome e preço
+```
+## Componente de produto com nome e preço
+```
 jsx
 Copiar
 Editar
@@ -100,7 +128,9 @@ function Produto({ nome, preco }) {
     </div>
   );
 }
-10. Formulário controlado com useState
+```
+## Formulario controlado com useState
+```
 jsx
 Copiar
 Editar
@@ -118,14 +148,18 @@ function Formulario() {
     </form>
   );
 }
-11. Avatar com estilização inline
+```
+## Avatar com estilização inline
+```
 jsx
 Copiar
 Editar
 function Avatar({ src, alt }) {
   return <img src={src} alt={alt} style={{ width: '100px', borderRadius: '50%' }} />;
 }
-12. Status usando operador ternário
+```
+## Status usando operador ternário
+```
 jsx
 Copiar
 Editar
@@ -138,7 +172,10 @@ function Status() {
     </div>
   );
 }
-13. Card com título e conteúdo
+```
+
+## Card com título e conteúdo
+```
 jsx
 Copiar
 Editar
@@ -150,7 +187,9 @@ function Card({ title, content }) {
     </section>
   );
 }
-14. Botão chamando função com parâmetro
+```
+## Botão chamando função com parâmetro
+```
 jsx
 Copiar
 Editar
@@ -161,7 +200,9 @@ const handleClick = (nome) => {
 function BotaoPersonalizado() {
   return <button onClick={() => handleClick('Lucas')}>Saudar</button>;
 }
-15. Lista de tarefas com map
+```
+## Lista de tarefas com map
+```
 jsx
 Copiar
 Editar
@@ -174,7 +215,9 @@ function ListaTarefas({ tarefas }) {
     </ul>
   );
 }
-16. Importação de imagem
+```
+## Importação de imagem
+```
 jsx
 Copiar
 Editar
@@ -183,7 +226,9 @@ import logo from './logo.svg';
 function Logo() {
   return <img src={logo} alt="Logo" />;
 }
-17. Estilização inline de botão
+```
+## Estilização inline de botão
+```
 jsx
 Copiar
 Editar
@@ -198,21 +243,27 @@ const estiloBotao = {
 function BotaoEstiloso() {
   return <button style={estiloBotao}>Botão Roxo</button>;
 }
-18. Footer simples
+```
+## Footer simples
+```
 jsx
 Copiar
 Editar
 function Footer() {
   return <footer>© 2025 - Meu Projeto React</footer>;
 }
-19. Saudação condicional
+```
+## Saudação condicional
+```
 jsx
 Copiar
 Editar
 function SaudacaoDinamica({ nome }) {
   return nome ? <h1>Bem-vindo, {nome}!</h1> : <h1>Olá, visitante!</h1>;
 }
-20. Exemplo de switch-case em JSX
+```
+## Exemplo de switch-case em JSX
+```
 jsx
 Copiar
 Editar
@@ -226,7 +277,9 @@ function Mensagem({ tipo }) {
       return <p>⚙️ Em progresso...</p>;
   }
 }
-21. Custom Hook de contagem
+```
+## Custom Hook de contagem
+```
 jsx
 Copiar
 Editar
@@ -240,7 +293,9 @@ function useContador(inicial) {
     decrementar: () => setCount(count - 1),
   };
 }
-22. Componente com defaultProps
+```
+## Componente com defaultProps
+```
 jsx
 Copiar
 Editar
@@ -251,7 +306,9 @@ function Saudacao({ nome }) {
 Saudacao.defaultProps = {
   nome: 'Visitante'
 };
-23. Eventos de formulário com useState
+```
+## Eventos de formulário com useState
+```
 jsx
 Copiar
 Editar
@@ -274,7 +331,9 @@ function Formulario() {
     </form>
   );
 }
-24. useContext para tema
+```
+## useContext para tema
+```
 jsx
 Copiar
 Editar
@@ -288,7 +347,9 @@ function TemaProvider({ children }) {
     </TemaContext.Provider>
   );
 }
-25. Componente com array de objetos
+```
+## Componente com array de objetos
+```
 jsx
 Copiar
 Editar
@@ -308,7 +369,9 @@ function ListaUsuarios() {
     </ul>
   );
 }
-26. Carregamento condicional com ternário
+```
+## Carregamento condicional com ternário
+```
 jsx
 Copiar
 Editar
@@ -321,21 +384,27 @@ function Carregamento() {
     </div>
   );
 }
-27. Classe CSS aplicada a um botão
+```
+## Classe CSS aplicada a um botão
+```
 jsx
 Copiar
 Editar
 function Botao() {
   return <button className="btn-primary">Clique-me</button>;
 }
-28. Atualizando o título da página
+```
+## Atualizando o título da página
+```
 jsx
 Copiar
 Editar
 useEffect(() => {
   document.title = 'Novo título da página';
 }, []);
-29. Componente com estilo dinâmico
+```
+## Componente com estilo dinâmico
+```
 jsx
 Copiar
 Editar
@@ -347,7 +416,9 @@ function CaixaColorida({ cor }) {
   };
   return <div style={estilo}></div>;
 }
-30. Componente de navegação simples
+```
+## Componente de navegação simples
+```
 jsx
 Copiar
 Editar
@@ -362,7 +433,9 @@ function Navbar() {
     </nav>
   );
 }
-31. Componente com funções assíncronas
+```
+## Componente com funções assíncronas
+```
 jsx
 Copiar
 Editar
@@ -371,7 +444,9 @@ const fetchData = async () => {
   const data = await res.json();
   console.log(data);
 };
-32. Componentes aninhados
+```
+## Componentes aninhados
+```
 jsx
 Copiar
 Editar
@@ -387,7 +462,9 @@ function App() {
 function Saudacao() {
   return <p>Saudações, amigo!</p>;
 }
-33. Componente com renderização condicional
+```
+## Componente com renderização condicional
+```
 jsx
 Copiar
 Editar
@@ -398,7 +475,9 @@ function Usuario({ usuario }) {
     <h1>Por favor, faça login.</h1>
   );
 }
-34. Slider de imagens
+```
+## Slider de imagens
+```
 jsx
 Copiar
 Editar
@@ -414,10 +493,4 @@ function Slider() {
     </div>
   );
 }
-Esses são alguns exemplos de código básico em React, com funcionalidades como estado, props, efeitos colaterais, e muito mais. Experimente e personalize conforme necessário!
-
-nginx
-Copiar
-Editar
-
-Isso deve fornecer um bom ponto de partida para o seu README!
+```
